@@ -6,7 +6,10 @@ set MADE_BY=MADE BY:
 set SPACE= 
 set KEY=EWEP
 echo %APP%%SPACE%%MADE_BY%%SPACE%%SPACE%%AUTHOR%%SPACE%%SPACE%%AVATAR%%SPACE%%KEY%
-echo SCRIPT PARA RESTAURAÇÃO DE ARQUIVOS DO WINDOWS!
+echo SCRIPT PARA RESTAURAR O WINDOWS!
+
+powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Este script vai verificar a integridade dos arquivos do Windows e restaurar os arquivos que estiverem corrompidos! Clique em OK para iniciar!', 'Integridade do Windows', 'OK', [System.Windows.Forms.MessageBoxIcon]::Information);}"
+
 
 echo ******************** REPARARANDO O WINDOWS ********************
 echo Verificando a integridade da imagem do Windows
